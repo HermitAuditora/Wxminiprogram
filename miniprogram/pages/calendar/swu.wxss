@@ -131,3 +131,16 @@
 .btn{
   margin-top: 6px;
 }
+
+.square-input {
+  border: 1px solid #ccc;  
+  border-radius: 3px;     
+  padding: 6px 10px;     
+  width: 150px;  
+}
+
+.Quary{
+  display: flex;
+  align-items: center;
+}
+

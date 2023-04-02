@@ -1,4 +1,10 @@
 <!-- 日历 -->
+<view class="Quary">
+  <form bindsubmit="mysubmit">
+  <input name="myinput" class="square-input" placeholder="请输入日程名称"/>
+  <button class="mybtn" size="mini" type="primary" plain="True" form-type="submit" style="position: relative; left: 472rpx; top: -86rpx">查询</button>
+  </form>
+</view>
 <view class="section">
   <view class="section__title">请选择学期</view>
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{semesterTitle}}">

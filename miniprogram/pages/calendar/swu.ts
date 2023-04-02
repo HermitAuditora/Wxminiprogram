@@ -247,6 +247,21 @@ bind_publish:function(e){    //点击某个具体的元素，获取到他在数�
 		});
   },
 
+mysubmit:function(event){  //从输入的日程表单中获取内容并匹配日程表
+  var formdata = event.detail.value.myinput;
+  var text="";
+  var eventdata = require("../../data/event.js").eventsList[0].eventsArray;
+  for(var i=0;i<eventdata.length;i++){
+    if(eventdata[i][1].includes(formdata)) {
+      text += eventdata[i][1]+",日期为:"+eventdata[i][0];
+    }
+  }
+  if(text == "")
+    text = "没有相应的日期安排";
+    wx.showModal({
+      content:text,
+    });
+},
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
