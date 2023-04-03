@@ -2,7 +2,7 @@
 <view class="Quary">
   <form bindsubmit="mysubmit">
   <input name="myinput" class="square-input" placeholder="请输入日程名称"/>
-  <button class="mybtn" size="mini" type="primary" plain="True" form-type="submit" style="position: relative; left: 472rpx; top: -86rpx">查询</button>
+  <button class="mybtn" size="mini" type="primary" plain="True" form-type="submit" >查询</button>
   </form>
 </view>
 <view class="section">

@@ -253,11 +253,12 @@ mysubmit:function(event){  //从输入的日程表单中获取内容并匹配日
   var eventdata = require("../../data/event.js").eventsList[0].eventsArray;
   for(var i=0;i<eventdata.length;i++){
     if(eventdata[i][1].includes(formdata)) {
-      text += eventdata[i][1]+",日期为:"+eventdata[i][0];
+      text += eventdata[i][1]+",日期为:"+eventdata[i][0]+"\n";
     }
   }
   if(text == "")
     text = "没有相应的日期安排";
+  if(formdata != "")
     wx.showModal({
       content:text,
     });
